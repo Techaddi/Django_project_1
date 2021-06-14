@@ -17,7 +17,7 @@ class Service(models.Model):
 class Contact(models.Model):
     name = models.CharField(max_length=20)
     email = models.EmailField(max_length=30)
-    number = models.IntegerField(max_length=100)
+    number = models.CharField(max_length=100)
     message = models.TextField()
 
 class Orders(models.Model):
