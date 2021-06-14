@@ -9,6 +9,6 @@ urlpatterns = [
     path('contact',views.contact, name='contact'),
     path('form',views.form, name='form'),
     path("checkout", views.checkout, name="Checkout"),
-    path("handlerequest", views.handlerequest, name="handlerequest"),
+    path('handlerequest', views.handlerequest, name='handlerequest'),
     
 ]
