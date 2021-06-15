@@ -1,1 +1,1 @@
-web: guicorn second.wsgi --log file-
+web: gunicorn second.wsgi --log file-
