@@ -1,1 +1,1 @@
-web: gunicorn secondapp.wsgi --log-file -
+web: gunicorn shardapustak.wsgi --log-file -
