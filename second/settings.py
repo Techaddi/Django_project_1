@@ -121,12 +121,13 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-DISABLE_COLLECTSTATIC=1
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath('static')))
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS =[
