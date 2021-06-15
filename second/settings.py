@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-hyvy@x(i+@km3%%jwa^@ew*dzd%x&)h*+*y9^dlp!$t!gzxf5%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','shardapustak.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','shardapustak.heroku.com']
 
 
 # Application definition
@@ -121,19 +121,19 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath('static')))
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR,'static')
 ]
-STATIC_ROOT =  os.path.join(BASE_DIR, 'static')
+
 MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
